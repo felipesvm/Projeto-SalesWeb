@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using SalesWebMvc.Services;
 namespace SalesWebMvc.Controllers
 {
     public class SalesRecordsController : Controller
