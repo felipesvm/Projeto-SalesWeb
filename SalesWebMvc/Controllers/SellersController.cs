@@ -4,6 +4,7 @@ using SalesWebMvc.Models.Enums;
 using SalesWebMvc.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using SalesWebMvc.Models.ViewModels;
+using System.Diagnostics;
 namespace SalesWebMvc.Controllers
 {
     public class SellersController : Controller
@@ -132,6 +133,16 @@ namespace SalesWebMvc.Controllers
             {
                 return RedirectToAction(nameof(Error), new { message = e.Message });
             }
+        }
+
+        public IActionResult Error(string message)
+        {
+            var viewModel = new ErrorViewModel
+            {
+                Message = message,
+                RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
+            };
+            return View(viewModel);
         }
 
 
