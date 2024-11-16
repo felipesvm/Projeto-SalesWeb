@@ -1,6 +1,6 @@
 ﻿using SalesWebMvc.Data;
 using SalesWebMvc.Models;
-
+using Microsoft.EntityFrameworkCore;
 namespace SalesWebMvc.Services
 {
     public class DepartmentService
