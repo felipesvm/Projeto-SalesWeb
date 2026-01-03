@@ -64,10 +64,10 @@ visualização de **relatórios de vendas**, de forma simples e organizada.
 ---
 
 ## ⚙️ Como Executar o Projeto
-
+https://github.com/felipesvm/Projeto-SalesWeb
 ```bash
 # Clone o repositório
-git clone https://github.com/AllisonSBahls/sales-web-asp-net-core-mvc.git
+git clone https://github.com/felipesvm/Projeto-SalesWeb.git
 
 # Abra o projeto no Visual Studio
 # Configure a connection string no appsettings.json
